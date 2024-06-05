@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    font-family: "Archivo", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; 
+}    
+
+.h-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('img/happy.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+    z-index: 1;
+    animation: opac 1s;
+}
+
+.h-text {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.navigate ul{
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 9999;
+}
+
+.navigate a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    animation: fade-up 0.5s;
+}
+
+.navigate li{
+    display: flex;
+    float:left;
+    justify-content: space-evenly;
+}
+
+.nav-text{
+    transition-property: transform;
+    transition-duration: 400ms;
+    transition: transform 0.5s ease;
+
+}
+
+.nav-text:hover{
+    transform: scale(1.2);
+}
+
+
+header h1 {
+    display: flex;
+    color: rgb(251, 255, 0);
+    font-size: 6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    animation: fade-down 1s;
+}
+
+.navig {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    margin-top: 200px;
+}
+
+.description{
+    display: flex;
+    color: rgb(251, 255, 0);
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2;
+    min-height: 100vh;
+}
+
+.a-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('img/flying.png');
+    background-size: cover;
+    background-position: center center;
+    z-index: -100;
+    opacity: 0.25;
+    animation: move 5s;
+}
+
+.show{
+    opacity: 1;
+}
+
+
+#bj h2{
+    color: aliceblue;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+#bj {
+    min-height: 100vh;
+    background-image: url('img/table.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec {
+    margin-top: 20px;
+}
+
+.h-casino {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+  
+.c-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #000000; 
+    color: white;
+    line-height: 1.7;
+}  
+.c-text h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.h-casino-r img, .h-casino img {
+    width: 40%;
+    height: 40%;
+    margin: 20px;
+}
+
+.h-casino-r {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+.games {
+    height: 100%;
+    width: 100%;
+    background-image: url('img/beach.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2;
+    min-height: 100vh;
+
+}
+
+.g-card{
+    width: 25%;
+    height: 25%;
+    translate: 600px 70px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.g-chip{
+    width: 25%;
+    height: 25%;
+    translate: -600px 70px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.games:hover img {
+    opacity: 1;
+}
+
+.games h2{
+    display: flex;
+    color: rgb(251, 255, 0);
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.games p{
+    display: flex;
+    color: rgb(251, 255, 0);
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.poker{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.p-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #000000; 
+    color: white;
+    line-height: 1.7;
+}  
+.p-text h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.poker img {
+    width: 40%;
+    height: 40%;
+    margin: 20px;
+}
+
+.blackjack{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.b-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #000000; 
+    color: white;
+    line-height: 1.7;
+}  
+.b-text h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.blackjack img {
+    width: 40%;
+    height: 40%;
+    margin: 20px;
+}
+
+.s-text, .r-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #000000; 
+    color: white;
+    line-height: 1.7;
+}  
+.s-text h2, .r-text h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.slots img {
+    width: 40%;
+    height: 40%;
+    margin: 20px;
+}
+
+.slots {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.r-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #000000; 
+    color: white;
+    line-height: 1.7;
+}  
+.r-text h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+footer h1 {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+
+}
+
+@media (max-width: 800px){
+
+    
+
+    .description{
+        font-size: 2rem;
+    }
+
+    .games h2{
+        font-size: 2rem;
+    }
+
+    .h-casino, .poker, .blackjack, .slots {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h-casino img, .h-casino-r img, .poker img, .slots img, .blackjack img {
+        padding: 10px;
+        width: 93%;
+        height: 93%;
+    }
+
+
+    .h-casino-r {
+        flex-direction:column;
+        align-items: center;
+    }
+
+}
+
+/*keyframes*/
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes opac{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+@keyframes opacc{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes move{
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
